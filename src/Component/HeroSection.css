@@ -20,6 +20,8 @@ main {
   grid-template-rows: 1fr;
   place-items: center;
   min-height: 100vh;
+  position: relative;
+  top: 30px;
 }
 
 /* Content */
@@ -44,9 +46,11 @@ main {
 }
 
 .content p {
-  font-size: clamp(0.9rem, 4vw, 1.2rem);
+  font-size: clamp(0.9rem, 4vw, 2rem);
   line-height: 1.6;
+  font-weight: 700;
   padding-right: 100px;
+  color: #ffffffd1;
 }
 
 .btn {

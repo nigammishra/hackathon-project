@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import HeroSection from './HeroSection';
 
 const ParticleBackground = () => {
   useEffect(() => {
@@ -84,17 +85,22 @@ const ParticleBackground = () => {
   }, []);
 
   return (
-    <div
-      id="particle-container"
-      style={{
-        width: "100%",
-        height: "100vh",
-        position: "absolute",
-        top: 0,
-        left: 0,
-        background: "linear-gradient(to bottom, #2c3e50, #3498db)"  // Added gradient background
-      }}
-    />
+    <div>
+      <div
+        id="particle-container"
+        style={{
+          width: "100%",
+          height: "100vh",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          background: "linear-gradient(to bottom, #2c3e50, #3498db)"  // Added gradient background
+        }}
+      />
+      <>
+      <HeroSection/>
+      </>
+    </div>
   );
 };
 
